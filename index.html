@@ -1,14 +1,1505 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Mohsen Bijari</title>
-</head>
-<body>
-  <h1>Mohsen Bijari</h1>
-  <p>Animal Genetics & Quantitative Genetics Researcher</p>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <h2>About Me</h2>
-  <p>Welcome to my academic portfolio website.</p>
+    <title>Mohsen Bijari | Quantitative Genetics Researcher</title>
+
+    <meta name="description"
+          content="Academic portfolio of Mohsen Bijari, a quantitative genetics researcher with experience in animal breeding, statistical modelling, dairy cattle health and performance.">
+
+    <meta name="author" content="Mohsen Bijari">
+
+    <style>
+
+        /* =========================
+           GENERAL
+        ========================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+            color: #263238;
+            background: #f7f9fb;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+
+        /* =========================
+           NAVIGATION
+        ========================== */
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255,255,255,0.96);
+            border-bottom: 1px solid #e5e7eb;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 70px;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: #173f5f;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 14px;
+            color: #455a64;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #173f5f;
+        }
+
+
+        /* =========================
+           HERO
+        ========================== */
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 70px;
+            background: linear-gradient(
+                135deg,
+                #eef4f8 0%,
+                #ffffff 100%
+            );
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .hero h1 {
+            font-size: 58px;
+            line-height: 1.1;
+            color: #173f5f;
+            margin-bottom: 15px;
+        }
+
+        .hero h2 {
+            font-size: 25px;
+            font-weight: 400;
+            color: #526b78;
+            margin-bottom: 25px;
+        }
+
+        .hero p {
+            max-width: 760px;
+            font-size: 18px;
+            color: #546e7a;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            border-radius: 6px;
+            border: 1px solid #173f5f;
+            font-weight: bold;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: #173f5f;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #0f2e45;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #173f5f;
+        }
+
+        .btn-secondary:hover {
+            background: #e9f0f5;
+        }
+
+
+        /* =========================
+           SECTIONS
+        ========================== */
+
+        section {
+            padding: 90px 0;
+        }
+
+        section:nth-child(even) {
+            background: white;
+        }
+
+        .section-title {
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            font-size: 34px;
+            color: #173f5f;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #78909c;
+            max-width: 700px;
+        }
+
+
+        /* =========================
+           ABOUT
+        ========================== */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .about-text p {
+            margin-bottom: 18px;
+            color: #546e7a;
+        }
+
+        .research-interests {
+            display: grid;
+            gap: 12px;
+        }
+
+        .interest {
+            padding: 18px;
+            background: #f4f7f9;
+            border-left: 4px solid #173f5f;
+            font-weight: 600;
+        }
+
+
+        /* =========================
+           PROJECTS
+        ========================== */
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 28px;
+            border: 1px solid #e3e8eb;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+        }
+
+        .card .year {
+            font-size: 13px;
+            color: #78909c;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            color: #173f5f;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #607d8b;
+            font-size: 14px;
+        }
+
+        .card ul {
+            margin-top: 15px;
+            padding-left: 20px;
+            color: #607d8b;
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           PUBLICATIONS
+        ========================== */
+
+        .publication {
+            background: white;
+            padding: 28px;
+            margin-bottom: 20px;
+            border-left: 4px solid #173f5f;
+            border-radius: 5px;
+        }
+
+        .publication h3 {
+            font-size: 18px;
+            color: #173f5f;
+            margin-bottom: 10px;
+        }
+
+        .publication p {
+            color: #607d8b;
+            font-size: 14px;
+        }
+
+        .doi {
+            display: inline-block;
+            margin-top: 12px;
+            color: #173f5f;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           TIMELINE
+        ========================== */
+
+        .timeline {
+            position: relative;
+            margin-left: 10px;
+            padding-left: 30px;
+            border-left: 2px solid #d9e2e7;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -39px;
+            top: 5px;
+            width: 14px;
+            height: 14px;
+            background: #173f5f;
+            border-radius: 50%;
+        }
+
+        .timeline-date {
+            font-size: 13px;
+            color: #78909c;
+            margin-bottom: 5px;
+        }
+
+        .timeline h3 {
+            color: #173f5f;
+            margin-bottom: 5px;
+        }
+
+        .timeline p {
+            color: #607d8b;
+        }
+
+
+        /* =========================
+           SKILLS
+        ========================== */
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            background: #edf3f7;
+            color: #173f5f;
+            padding: 10px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+
+        /* =========================
+           AWARDS
+        ========================== */
+
+        .awards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .award {
+            padding: 22px;
+            border: 1px solid #e1e7ea;
+            background: #ffffff;
+            border-radius: 7px;
+        }
+
+        .award h3 {
+            color: #173f5f;
+            font-size: 17px;
+            margin-bottom: 7px;
+        }
+
+        .award p {
+            color: #607d8b;
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           CV
+        ========================== */
+
+        .cv-box {
+            background: #173f5f;
+            color: white;
+            padding: 45px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .cv-box h2 {
+            margin-bottom: 10px;
+        }
+
+        .cv-box p {
+            margin-bottom: 25px;
+            opacity: 0.9;
+        }
+
+        .cv-button {
+            display: inline-block;
+            background: white;
+            color: #173f5f;
+            padding: 12px 25px;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           CONTACT
+        ========================== */
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .contact-card {
+            padding: 25px;
+            background: #f4f7f9;
+            border-radius: 8px;
+        }
+
+        .contact-card h3 {
+            color: #173f5f;
+            margin-bottom: 8px;
+        }
+
+        .contact-card p {
+            color: #607d8b;
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            background: #102f46;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        footer p {
+            font-size: 13px;
+            opacity: 0.8;
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================== */
+
+        @media (max-width: 800px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .hero h2 {
+                font-size: 21px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .about-grid,
+            .projects,
+            .awards,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 65px 0;
+            }
+
+            .section-title h2 {
+                font-size: 28px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     NAVIGATION
+========================== -->
+
+<nav>
+
+    <div class="nav-container">
+
+        <div class="logo">
+            Mohsen Bijari
+        </div>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#research">Research</a>
+            </li>
+
+            <li>
+                <a href="#publications">Publications</a>
+            </li>
+
+            <li>
+                <a href="#education">Education</a>
+            </li>
+
+            <li>
+                <a href="#awards">Awards</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =========================
+     HERO
+========================== -->
+
+<header class="hero">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <h1>
+                Mohsen Bijari
+            </h1>
+
+            <h2>
+                Quantitative Genetics Researcher
+            </h2>
+
+            <p>
+                Quantitative genetics researcher with experience in
+                statistical modelling, animal breeding, and data-driven
+                evaluation of health and performance traits in dairy cattle.
+            </p>
+
+            <div class="buttons">
+
+                <a href="#research" class="btn btn-primary">
+                    Explore My Research
+                </a>
+
+                <a href="#contact" class="btn btn-secondary">
+                    Contact Me
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================
+     ABOUT
+========================== -->
+
+<section id="about">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                About Me
+            </h2>
+
+            <p>
+                Research interests and academic background
+            </p>
+
+        </div>
+
+
+        <div class="about-grid">
+
+            <div class="about-text">
+
+                <p>
+                    I am a quantitative genetics researcher with experience
+                    in statistical modelling, animal breeding, and
+                    data-driven evaluation of health and performance traits
+                    in dairy cattle.
+                </p>
+
+                <p>
+                    My research interests include longevity, welfare-related
+                    traits, and the integration of phenotypic big data with
+                    genetic improvement programs.
+                </p>
+
+                <p>
+                    I have experience working with complex livestock
+                    datasets and applying SAS and R-based statistical
+                    workflows.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3 style="color:#173f5f; margin-bottom:20px;">
+                    Research Interests
+                </h3>
+
+                <div class="research-interests">
+
+                    <div class="interest">
+                        Quantitative Genetics
+                    </div>
+
+                    <div class="interest">
+                        Animal Breeding
+                    </div>
+
+                    <div class="interest">
+                        Dairy Cattle
+                    </div>
+
+                    <div class="interest">
+                        Longevity & Reproduction
+                    </div>
+
+                    <div class="interest">
+                        Animal Health
+                    </div>
+
+                    <div class="interest">
+                        Statistical Modelling
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     RESEARCH
+========================== -->
+
+<section id="research">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Research Projects
+            </h2>
+
+            <p>
+                Selected academic and research projects
+            </p>
+
+        </div>
+
+
+        <div class="projects">
+
+
+            <!-- PROJECT 1 -->
+
+            <div class="card">
+
+                <div class="year">
+                    2017 – 2020
+                </div>
+
+                <h3>
+                    Economic Consequences of FMD
+                </h3>
+
+                <p>
+                    M.Sc. thesis at Isfahan University of Technology
+                    investigating the economic, productive and reproductive
+                    consequences of foot-and-mouth disease in Iranian
+                    Holstein cows.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Developed a new economic formula to estimate
+                        financial losses.
+                    </li>
+
+                    <li>
+                        Investigated FMD occurrence across seasons and parity.
+                    </li>
+
+                    <li>
+                        Studied productive and reproductive traits.
+                    </li>
+
+                    <li>
+                        Used SQL for data management.
+                    </li>
+
+                    <li>
+                        Statistical analysis using SAS and R.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- PROJECT 2 -->
+
+            <div class="card">
+
+                <div class="year">
+                    2016
+                </div>
+
+                <h3>
+                    Dairy Cow Transition Period
+                </h3>
+
+                <p>
+                    B.Sc. project at Birjand University focusing on methods
+                    to evaluate the success of the transition period in
+                    early lactation of dairy cows.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Analysed longitudinal physiological and performance data.
+                    </li>
+
+                    <li>
+                        Used mixed models and statistical prediction methods.
+                    </li>
+
+                    <li>
+                        Explored welfare and metabolic traits related to longevity.
+                    </li>
+
+                    <li>
+                        Managed complex phenotypic datasets.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- PROJECT 3 -->
+
+            <div class="card">
+
+                <div class="year">
+                    2015
+                </div>
+
+                <h3>
+                    Freshwater Lobster Breeding
+                </h3>
+
+                <p>
+                    B.Sc. seminar at Birjand University on management and
+                    breeding of freshwater lobsters.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Reproductive cycles and larval stages.
+                    </li>
+
+                    <li>
+                        Environmental requirements.
+                    </li>
+
+                    <li>
+                        Water quality and feed management.
+                    </li>
+
+                    <li>
+                        Growth and survival optimization.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     PUBLICATIONS
+========================== -->
+
+<section id="publications">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Publications
+            </h2>
+
+            <p>
+                Peer-reviewed research publications
+            </p>
+
+        </div>
+
+
+        <div class="publication">
+
+            <h3>
+                Productivity, reproduction and economic losses due to
+                foot-and-mouth disease (FMD) in Iranian Holstein cows
+            </h3>
+
+            <p>
+                Bijari, M., Sadeghi-Sefidmazgi, A., Ansari-Lari, M.,
+                & Ghaffari, M. H. (2025).
+                <em>Preventive Veterinary Medicine, 238, 106471.</em>
+            </p>
+
+            <a
+                class="doi"
+                href="https://doi.org/10.1016/j.prevetmed.2025.106471"
+                target="_blank">
+                View DOI →
+            </a>
+
+        </div>
+
+
+        <div class="publication">
+
+            <h3>
+                A Study on some Factors Affecting the Incidence of
+                Foot and Mouth Disease and the Culling Associated with
+                in Iranian Dairy Cows
+            </h3>
+
+            <p>
+                Bijari, M., & Sadeghi-Sefidmazgi, A. (2023).
+                <em>Iranian Journal of Animal Science, 54(3), 289–301.</em>
+            </p>
+
+            <a
+                class="doi"
+                href="https://doi.org/10.22059/IJAS.2022.349105.653909"
+                target="_blank">
+                View DOI →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     RESEARCH ASSISTANT EXPERIENCE
+========================== -->
+
+<section>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Research Experience
+            </h2>
+
+            <p>
+                Research assistant experiences
+            </p>
+
+        </div>
+
+
+        <div class="timeline">
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-date">
+                    Spring 2019
+                </div>
+
+                <h3>
+                    Research Assistant
+                </h3>
+
+                <p>
+                    FEKA Farm, Isfahan, Iran
+                </p>
+
+                <p>
+                    Project: The effect of different colostrum feeding times
+                    on postnatal weight gain in Holstein calves.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-date">
+                    Autumn 2018
+                </div>
+
+                <h3>
+                    Research Assistant
+                </h3>
+
+                <p>
+                    Lavark Farm, Isfahan University of Technology
+                </p>
+
+                <p>
+                    Project: Nutritional effects on multiple births in
+                    Afshari breed ewes.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-date">
+                    Summer 2016
+                </div>
+
+                <h3>
+                    Research Assistant
+                </h3>
+
+                <p>
+                    Research Site of Saanen Goats,
+                    Birjand University
+                </p>
+
+                <p>
+                    Project: The effect of different types of feed on
+                    the growth and lactation of Saanen goats.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-date">
+                    2015 – 2016
+                </div>
+
+                <h3>
+                    Genetics Laboratory Intern
+                </h3>
+
+                <p>
+                    Genetics Laboratory, Birjand University
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     EDUCATION
+========================== -->
+
+<section id="education">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Education
+            </h2>
+
+            <p>
+                Academic background
+            </p>
+
+        </div>
+
+
+        <div class="timeline">
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-date">
+                    2017 – 2020
+                </div>
+
+                <h3>
+                    Master of Animal Genetics and Inbreeding
+                </h3>
+
+                <p>
+                    Isfahan University of Technology
+                </p>
+
+                <p>
+                    GPA: 3.14 / 4
+                </p>
+
+                <p>
+                    Thesis: A study on Economic Consequences of
+                    Foot and Mouth Disease (FMD) in Holstein cows in Iran
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-date">
+                    2013 – 2017
+                </div>
+
+                <h3>
+                    Bachelor of Animal Sciences
+                </h3>
+
+                <p>
+                    Birjand University
+                </p>
+
+                <p>
+                    GPA: 3.1 / 4
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     SKILLS
+========================== -->
+
+<section>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Skills
+            </h2>
+
+            <p>
+                Statistical, genetic and research skills
+            </p>
+
+        </div>
+
+
+        <div class="skills">
+
+            <span class="skill">SAS 9.4</span>
+
+            <span class="skill">R</span>
+
+            <span class="skill">Python</span>
+
+            <span class="skill">SQL</span>
+
+            <span class="skill">BLUPF90</span>
+
+            <span class="skill">AIREML</span>
+
+            <span class="skill">SRNS</span>
+
+            <span class="skill">RStudio</span>
+
+            <span class="skill">Quantitative Genetics</span>
+
+            <span class="skill">Animal Breeding</span>
+
+            <span class="skill">Big Data Handling</span>
+
+            <span class="skill">Longevity Analysis</span>
+
+            <span class="skill">Reproduction Analysis</span>
+
+            <span class="skill">Artificial Insemination</span>
+
+            <span class="skill">Laboratory Techniques</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     AWARDS
+========================== -->
+
+<section id="awards">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Honors & Awards
+            </h2>
+
+            <p>
+                Selected academic and professional achievements
+            </p>
+
+        </div>
+
+
+        <div class="awards">
+
+
+            <div class="award">
+
+                <h3>
+                    Top 1% Nationwide
+                </h3>
+
+                <p>
+                    Ranked in the top 1% of the national Master's entrance
+                    exam in Animal Genetics and Inbreeding, 2017.
+                </p>
+
+            </div>
+
+
+            <div class="award">
+
+                <h3>
+                    Iran's National Elites Foundation
+                </h3>
+
+                <p>
+                    Membership in Iran's National Elites Foundation, 2020.
+                </p>
+
+            </div>
+
+
+            <div class="award">
+
+                <h3>
+                    Second Place in GPA
+                </h3>
+
+                <p>
+                    Second place in GPA among graduates of Animal Genetics
+                    and Inbreeding at Isfahan University of Technology.
+                </p>
+
+            </div>
+
+
+            <div class="award">
+
+                <h3>
+                    Top 100 Researchers
+                </h3>
+
+                <p>
+                    Among the top 100 researchers recognized by the
+                    Ministry of Cooperation, Labor and Social Welfare, 2022.
+                </p>
+
+            </div>
+
+
+            <div class="award">
+
+                <h3>
+                    Top Statistician
+                </h3>
+
+                <p>
+                    Recognized as a top statistician by the General Department
+                    of Cooperation, Labor and Social Welfare of South Khorasan,
+                    2021.
+                </p>
+
+            </div>
+
+
+            <div class="award">
+
+                <h3>
+                    Scientific Association Award
+                </h3>
+
+                <p>
+                    Second rank of the Scientific Association of Animal
+                    Sciences at the Harkat National University Festival, 2016.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     PROFESSIONAL EXPERIENCE
+========================== -->
+
+<section>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Professional Experience
+            </h2>
+
+        </div>
+
+
+        <div class="timeline">
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-date">
+                    February 2020 – Present
+                </div>
+
+                <h3>
+                    Animal Health Advisor
+                </h3>
+
+                <p>
+                    SANKA, Birjand, Iran
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-date">
+                    2019 – 2022
+                </div>
+
+                <h3>
+                    Student Advisor
+                </h3>
+
+                <p>
+                    Isfahan University of Technology
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-date">
+                    July 2021 – December 2021
+                </div>
+
+                <h3>
+                    Statistics Expert
+                </h3>
+
+                <p>
+                    General Department of Cooperation, Labor and Social
+                    Welfare of South Khorasan
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     CV
+========================== -->
+
+<section>
+
+    <div class="container">
+
+        <div class="cv-box">
+
+            <h2>
+                Curriculum Vitae
+            </h2>
+
+            <p>
+                For a complete overview of my academic and professional
+                background, please download my CV.
+            </p>
+
+            <!--
+                After uploading your CV to the repository,
+                change "Mohsen_Bijari_CV.pdf"
+                to the exact filename of your PDF.
+            -->
+
+            <a
+                href="Mohsen_Bijari_CV.pdf"
+                class="cv-button"
+                target="_blank">
+                Download CV
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     CONTACT
+========================== -->
+
+<section id="contact">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Contact
+            </h2>
+
+            <p>
+                Academic and research collaboration
+            </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+
+            <div class="contact-card">
+
+                <h3>
+                    Email
+                </h3>
+
+                <p>
+                    Add your academic email here
+                </p>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <h3>
+                    LinkedIn
+                </h3>
+
+                <p>
+                    Add your LinkedIn profile
+                </p>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <h3>
+                    Google Scholar
+                </h3>
+
+                <p>
+                    Add your Google Scholar profile
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================== -->
+
+<footer>
+
+    <div class="container">
+
+        <p>
+            © 2026 Mohsen Bijari. Academic Portfolio.
+        </p>
+
+    </div>
+
+</footer>
+
+
 </body>
 </html>
