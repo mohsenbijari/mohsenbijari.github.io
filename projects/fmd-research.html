@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FMD Research Project | Mohsen Bijari</title>
+
+    <meta
+        name="description"
+        content="M.Sc. research project by Mohsen Bijari investigating the economic, productive, reproductive and epidemiological consequences of foot-and-mouth disease in Iranian Holstein cows."
+    >
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f7f9fc;
+            color: #263238;
+            line-height: 1.7;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: min(1050px, 92%);
+            margin: auto;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            background: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 18px 0;
+        }
+
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .back-link {
+            color: #2563eb;
+            font-weight: 600;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        /* HERO */
+
+        .project-header {
+            background: #ffffff;
+            padding: 75px 0 60px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .project-label {
+            display: inline-block;
+            background: #e8f0fe;
+            color: #2563eb;
+            padding: 7px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 22px;
+        }
+
+        h1 {
+            font-size: clamp(32px, 5vw, 50px);
+            line-height: 1.15;
+            color: #172033;
+            max-width: 950px;
+            margin-bottom: 25px;
+        }
+
+        .project-meta {
+            color: #64748b;
+            font-size: 17px;
+        }
+
+        /* MAIN */
+
+        main {
+            padding: 50px 0 80px;
+        }
+
+        .section {
+            background: #ffffff;
+            padding: 35px;
+            margin-bottom: 25px;
+            border-radius: 14px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .section h2 {
+            font-size: 26px;
+            color: #172033;
+            margin-bottom: 18px;
+        }
+
+        .section p {
+            color: #475569;
+            font-size: 17px;
+        }
+
+        /* PROJECT OVERVIEW */
+
+        .overview {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .overview-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .overview-card strong {
+            display: block;
+            color: #2563eb;
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+
+        .overview-card span {
+            color: #334155;
+            font-size: 16px;
+        }
+
+        /* RESEARCH QUESTION */
+
+        .research-question {
+            border-left: 4px solid #2563eb;
+            background: #f8fafc;
+            padding: 22px 25px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .research-question p {
+            font-size: 19px;
+            color: #334155;
+        }
+
+        /* METHODS */
+
+        .methods {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+            margin-top: 25px;
+        }
+
+        .method-card {
+            padding: 23px;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+        }
+
+        .method-card h3 {
+            color: #172033;
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+
+        .method-card p {
+            font-size: 15px;
+        }
+
+        /* RESEARCH AREAS */
+
+        .research-list {
+            padding-left: 22px;
+            margin-top: 15px;
+        }
+
+        .research-list li {
+            margin-bottom: 12px;
+            color: #475569;
+            font-size: 16px;
+        }
+
+        /* PUBLICATIONS */
+
+        .publication {
+            padding: 22px;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            margin-top: 18px;
+        }
+
+        .publication-year {
+            color: #2563eb;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .publication h3 {
+            margin: 7px 0 8px;
+            color: #172033;
+            font-size: 18px;
+        }
+
+        .publication p {
+            font-size: 15px;
+            margin-bottom: 12px;
+        }
+
+        .publication-link {
+            color: #2563eb;
+            font-weight: 600;
+        }
+
+        .publication-link:hover {
+            text-decoration: underline;
+        }
+
+        /* BUTTONS */
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 11px 18px;
+            border-radius: 8px;
+            border: 1px solid #2563eb;
+            color: #2563eb;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            background: #2563eb;
+            color: #ffffff;
+        }
+
+        .button-primary {
+            background: #2563eb;
+            color: #ffffff;
+        }
+
+        .button-primary:hover {
+            background: #1d4ed8;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #172033;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 750px) {
+
+            .project-header {
+                padding: 50px 0 45px;
+            }
+
+            .section {
+                padding: 25px;
+            }
+
+            .overview {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .methods {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+        @media (max-width: 480px) {
+
+            .overview {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <div class="container nav-inner">
+
+            <a href="../index.html" class="back-link">
+                ← Back to Academic Portfolio
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- HERO -->
+
+    <header class="project-header">
+
+        <div class="container">
+
+            <span class="project-label">
+                M.Sc. Research Project · 2017–2020
+            </span>
+
+            <h1>
+                A Study on Economic Consequences of Foot-and-Mouth Disease
+                (FMD) in Holstein Cows in Iran
+            </h1>
+
+            <p class="project-meta">
+                Isfahan University of Technology · M.Sc. Thesis
+            </p>
+
+            <p class="project-meta">
+                Supervisor: Dr. Ali Sadeghi-Sefidmazgi
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <div class="container">
+
+
+            <!-- OVERVIEW -->
+
+            <section class="section">
+
+                <h2>Project Overview</h2>
+
+                <p>
+                    This research project investigated the epidemiological,
+                    productive, reproductive and economic consequences of
+                    foot-and-mouth disease (FMD) in Holstein dairy cows in Iran.
+                    The project formed the basis of my M.Sc. thesis in Animal
+                    Genetics and Inbreeding at Isfahan University of Technology.
+                </p>
+
+                <div class="overview">
+
+                    <div class="overview-card">
+                        <strong>Project Period</strong>
+                        <span>2017–2020</span>
+                    </div>
+
+                    <div class="overview-card">
+                        <strong>Degree</strong>
+                        <span>M.Sc. Research Thesis</span>
+                    </div>
+
+                    <div class="overview-card">
+                        <strong>Institution</strong>
+                        <span>Isfahan University of Technology</span>
+                    </div>
+
+                    <div class="overview-card">
+                        <strong>Research Area</strong>
+                        <span>Quantitative Genetics &amp; Animal Health</span>
+                    </div>
+
+                    <div class="overview-card">
+                        <strong>Data Management</strong>
+                        <span>SQL</span>
+                    </div>
+
+                    <div class="overview-card">
+                        <strong>Statistical Analysis</strong>
+                        <span>SAS &amp; R</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- RESEARCH QUESTION -->
+
+            <section class="section">
+
+                <h2>Research Question</h2>
+
+                <div class="research-question">
+
+                    <p>
+                        How does foot-and-mouth disease affect the productive,
+                        reproductive and economic performance of Iranian
+                        Holstein dairy cows, and which animal and management
+                        factors are associated with disease occurrence and
+                        its consequences?
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- DATA -->
+
+            <section class="section">
+
+                <h2>Data &amp; Study Framework</h2>
+
+                <p>
+                    The research used large-scale dairy-cow records to
+                    investigate disease occurrence and its relationships with
+                    production, reproduction and animal-level characteristics.
+                    The analytical framework combined epidemiological
+                    investigation, statistical modelling and economic
+                    evaluation.
+                </p>
+
+                <div class="overview">
+
+                    <div class="overview-card">
+                        <strong>Animal</strong>
+                        <span>Holstein dairy cows</span>
+                    </div>
+
+                    <div class="overview-card">
+                        <strong>Study Period</strong>
+                        <span>2009–2019</span>
+                    </div>
+
+                    <div class="overview-card">
+                        <strong>Records</strong>
+                        <span>49,400 records</span>
+                    </div>
+
+                    <div class="overview-card">
+                        <strong>Cows</strong>
+                        <span>20,330 cows</span>
+                    </div>
+
+                    <div class="overview-card">
+                        <strong>Herds</strong>
+                        <span>9 dairy herds</span>
+                    </div>
+
+                    <div class="overview-card">
+                        <strong>Data Management</strong>
+                        <span>SQL-based workflow</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- RESEARCH COMPONENTS -->
+
+            <section class="section">
+
+                <h2>Research Components</h2>
+
+                <ul class="research-list">
+
+                    <li>
+                        Development of a new economic formula for estimating
+                        financial losses caused by FMD.
+                    </li>
+
+                    <li>
+                        Epidemiological investigation of FMD occurrence.
+                    </li>
+
+                    <li>
+                        Investigation of disease occurrence across different
+                        seasons and parity groups.
+                    </li>
+
+                    <li>
+                        Investigation of relationships between productive and
+                        reproductive traits and disease incidence.
+                    </li>
+
+                    <li>
+                        Evaluation of the effects of FMD outbreaks on
+                        productive and reproductive traits.
+                    </li>
+
+                    <li>
+                        Investigation of potential implications of disease,
+                        production and reproduction for longevity in Holstein
+                        cows.
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+            <!-- METHODS -->
+
+            <section class="section">
+
+                <h2>Methods &amp; Analytical Skills</h2>
+
+                <div class="methods">
+
+                    <div class="method-card">
+
+                        <h3>Data Management</h3>
+
+                        <p>
+                            SQL-based management and preparation of complex
+                            dairy-cow datasets.
+                        </p>
+
+                    </div>
+
+
+                    <div class="method-card">
+
+                        <h3>Statistical Analysis</h3>
+
+                        <p>
+                            Statistical analysis using SAS and R to investigate
+                            disease occurrence and production-related traits.
+                        </p>
+
+                    </div>
+
+
+                    <div class="method-card">
+
+                        <h3>Epidemiological Analysis</h3>
+
+                        <p>
+                            Evaluation of disease occurrence according to
+                            season, parity and animal characteristics.
+                        </p>
+
+                    </div>
+
+
+                    <div class="method-card">
+
+                        <h3>Economic Modelling</h3>
+
+                        <p>
+                            Development of an economic framework for estimating
+                            the financial consequences of FMD.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- RESEARCH CONTRIBUTION -->
+
+            <section class="section">
+
+                <h2>Research Contribution</h2>
+
+                <p>
+                    The project integrated animal health, quantitative
+                    analysis, dairy production, reproduction and economic
+                    evaluation within a single research framework.
+
+                    A particular focus was placed on translating disease
+                    effects into measurable production, reproductive and
+                    financial consequences, while also investigating factors
+                    associated with disease occurrence.
+                </p>
+
+            </section>
+
+
+            <!-- RELATED PUBLICATIONS -->
+
+            <section class="section">
+
+                <h2>Related Publications</h2>
+
+
+                <div class="publication">
+
+                    <span class="publication-year">
+                        2025
+                    </span>
+
+                    <h3>
+                        Productivity, reproduction and economic losses due to
+                        foot-and-mouth disease (FMD) in Iranian Holstein cows
+                    </h3>
+
+                    <p>
+                        Preventive Veterinary Medicine, 238, 106471.
+                    </p>
+
+                    <a
+                        href="../publications/fmd-economic-impact.html"
+                        class="publication-link">
+                        View publication →
+                    </a>
+
+                </div>
+
+
+                <div class="publication">
+
+                    <span class="publication-year">
+                        2023
+                    </span>
+
+                    <h3>
+                        A Study on some Factors Affecting the Incidence of
+                        Foot and Mouth Disease and the Culling Associated
+                        with in Iranian Dairy Cows
+                    </h3>
+
+                    <p>
+                        Iranian Journal of Animal Science, 54(3), 289–301.
+                    </p>
+
+                    <a
+                        href="../publications/fmd-incidence-culling.html"
+                        class="publication-link">
+                        View publication →
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- LINKS -->
+
+            <section class="section">
+
+                <h2>Project Resources</h2>
+
+                <div class="buttons">
+
+                    <a
+                        href="../index.html#publications"
+                        class="button button-primary">
+                        View Publications
+                    </a>
+
+                    <a
+                        href="../Mohsen_Bijari_CV.pdf"
+                        target="_blank"
+                        class="button">
+                        View CV
+                    </a>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        © 2026 Mohsen Bijari · Academic Portfolio
+
+    </footer>
+
+
+</body>
+  </html>
