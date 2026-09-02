@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FMD Incidence and Culling in Iranian Dairy Cows | Mohsen Bijari</title>
+
+    <meta
+        name="description"
+        content="Research publication by Mohsen Bijari investigating foot-and-mouth disease incidence, culling, abortion, stillbirth and weight loss in Iranian dairy cows."
+    >
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f7f9fc;
+            color: #263238;
+            line-height: 1.7;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: min(1000px, 92%);
+            margin: auto;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            background: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 18px 0;
+        }
+
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .back-link {
+            color: #2563eb;
+            font-weight: 600;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        /* HEADER */
+
+        .publication-header {
+            background: #ffffff;
+            padding: 70px 0 55px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .publication-year {
+            display: inline-block;
+            background: #e8f0fe;
+            color: #2563eb;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: clamp(30px, 5vw, 46px);
+            line-height: 1.2;
+            color: #172033;
+            max-width: 900px;
+            margin-bottom: 25px;
+        }
+
+        .authors {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .journal {
+            color: #64748b;
+            font-size: 16px;
+        }
+
+        /* CONTENT */
+
+        main {
+            padding: 50px 0 80px;
+        }
+
+        .section {
+            background: #ffffff;
+            padding: 35px;
+            margin-bottom: 25px;
+            border-radius: 14px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .section h2 {
+            color: #172033;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .abstract {
+            font-size: 17px;
+            color: #475569;
+        }
+
+        /* HIGHLIGHTS */
+
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .highlight {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .highlight strong {
+            display: block;
+            font-size: 23px;
+            color: #2563eb;
+            margin-bottom: 5px;
+        }
+
+        .highlight span {
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        /* FINDINGS */
+
+        .findings {
+            padding-left: 20px;
+        }
+
+        .findings li {
+            margin-bottom: 12px;
+        }
+
+        /* ARTICLE INFO */
+
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .info-table tr {
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .info-table td {
+            padding: 13px 5px;
+            vertical-align: top;
+        }
+
+        .info-table td:first-child {
+            width: 180px;
+            font-weight: 700;
+            color: #334155;
+        }
+
+        /* BUTTONS */
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 11px 18px;
+            border-radius: 8px;
+            font-weight: 600;
+            border: 1px solid #2563eb;
+            color: #2563eb;
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            background: #2563eb;
+            color: #ffffff;
+        }
+
+        .button-primary {
+            background: #2563eb;
+            color: #ffffff;
+        }
+
+        .button-primary:hover {
+            background: #1d4ed8;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #172033;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            .publication-header {
+                padding: 45px 0;
+            }
+
+            .section {
+                padding: 25px;
+            }
+
+            .highlights {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .info-table td:first-child {
+                width: 130px;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            .highlights {
+                grid-template-columns: 1fr;
+            }
+
+            .info-table,
+            .info-table tbody,
+            .info-table tr,
+            .info-table td {
+                display: block;
+                width: 100%;
+            }
+
+            .info-table td:first-child {
+                padding-bottom: 2px;
+            }
+
+            .info-table td:last-child {
+                padding-top: 2px;
+                padding-bottom: 15px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="container nav-inner">
+
+            <a href="../index.html" class="back-link">
+                ← Back to Academic Portfolio
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <header class="publication-header">
+
+        <div class="container">
+
+            <span class="publication-year">
+                2023 · Research Article
+            </span>
+
+            <h1>
+                A Study on some Factors Affecting the Incidence of Foot and
+                Mouth Disease and the Culling Associated with in Iranian Dairy Cows
+            </h1>
+
+            <p class="authors">
+                <strong>Mohsen Bijari</strong> · Ali Sadeghi-Sefidmazgi
+            </p>
+
+            <p class="journal">
+                Iranian Journal of Animal Science · Issue 3 · pp. 289–301 · 2023
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <div class="container">
+
+
+            <!-- ABSTRACT -->
+
+            <section class="section">
+
+                <h2>Abstract</h2>
+
+                <p class="abstract">
+
+                    This study investigated the incidence, culling, abortion,
+                    stillbirth and weight loss associated with foot-and-mouth
+                    disease (FMD) outbreaks in Iranian dairy cows, with a
+                    particular focus on interactions between parity and body
+                    condition.
+
+                    A total of 49,400 records from 20,330 cows were analysed
+                    over the period 2009–2019. The data were collected from
+                    nine industrial dairy farms located in several provinces
+                    of Iran.
+
+                    FREQ and LOGISTIC procedures in SAS were used to evaluate
+                    disease incidence and the effects of FMD on abortion,
+                    stillbirth and weight loss.
+                </p>
+
+            </section>
+
+
+            <!-- HIGHLIGHTS -->
+
+            <section class="section">
+
+                <h2>Research at a Glance</h2>
+
+                <div class="highlights">
+
+                    <div class="highlight">
+                        <strong>49,400</strong>
+                        <span>Animal records</span>
+                    </div>
+
+                    <div class="highlight">
+                        <strong>20,330</strong>
+                        <span>Dairy cows</span>
+                    </div>
+
+                    <div class="highlight">
+                        <strong>9</strong>
+                        <span>Industrial dairy farms</span>
+                    </div>
+
+                    <div class="highlight">
+                        <strong>43%</strong>
+                        <span>FMD incidence</span>
+                    </div>
+
+                    <div class="highlight">
+                        <strong>11%</strong>
+                        <span>FMD mortality</span>
+                    </div>
+
+                    <div class="highlight">
+                        <strong>2009–2019</strong>
+                        <span>Study period</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- KEY FINDINGS -->
+
+            <section class="section">
+
+                <h2>Key Findings</h2>
+
+                <ul class="findings">
+
+                    <li>
+                        The estimated overall incidence of FMD was
+                        <strong>43%</strong>.
+                    </li>
+
+                    <li>
+                        The estimated FMD mortality was
+                        <strong>11%</strong>.
+                    </li>
+
+                    <li>
+                        Within-herd FMD incidence ranged from
+                        <strong>18% to 59%</strong>.
+                    </li>
+
+                    <li>
+                        The proportion of culling associated with FMD ranged
+                        from approximately <strong>1% to 18%</strong>
+                        across herds.
+                    </li>
+
+                    <li>
+                        FMD-affected cows showed an average
+                        <strong>23% decrease in body condition score (BCS)</strong>
+                        compared with healthy cows.
+                    </li>
+
+                    <li>
+                        FMD was associated with an approximately
+                        <strong>5% increase in abortion</strong>.
+                    </li>
+
+                    <li>
+                        FMD was associated with an approximately
+                        <strong>4% increase in stillbirth</strong>.
+                    </li>
+
+                    <li>
+                        The probability of disease occurrence increased during
+                        colder seasons among primiparous cows with abortion and
+                        skinny body condition.
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+            <!-- METHODOLOGY -->
+
+            <section class="section">
+
+                <h2>Methodology</h2>
+
+                <p class="abstract">
+
+                    The study was based on retrospective dairy-cow records
+                    collected between 2009 and 2019 from nine industrial dairy
+                    farms in Isfahan, Golestan, Fars, South Khorasan,
+                    Khorasan Razavi, and Chaharmahal and Bakhtiari provinces.
+
+                    The FREQ procedure in SAS was used to estimate FMD
+                    incidence and mortality.
+
+                    Logistic regression using the LOGISTIC procedure in SAS
+                    was applied to evaluate the effects of FMD and its
+                    interactions with parity and body condition on abortion,
+                    stillbirth and weight loss.
+
+                </p>
+
+            </section>
+
+
+            <!-- PARITY AND BODY CONDITION -->
+
+            <section class="section">
+
+                <h2>Parity &amp; Body Condition</h2>
+
+                <p class="abstract">
+
+                    The study identified important interactions between parity
+                    and body condition.
+
+                    Among cows with normal and fatty body condition scores,
+                    multiparous cows had lower probabilities of abortion,
+                    stillbirth and weight loss compared with primiparous cows
+                    in the corresponding BCS groups.
+
+                    In contrast, among cows classified as having a skinny BCS,
+                    multiparous cows showed a higher probability of weight loss
+                    than primiparous cows.
+
+                </p>
+
+            </section>
+
+
+            <!-- ARTICLE INFORMATION -->
+
+            <section class="section">
+
+                <h2>Article Information</h2>
+
+                <table class="info-table">
+
+                    <tr>
+                        <td>Authors</td>
+                        <td>
+                            Mohsen Bijari; Ali Sadeghi-Sefidmazgi
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Journal</td>
+                        <td>
+                            Iranian Journal of Animal Science
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Year</td>
+                        <td>2023</td>
+                    </tr>
+
+                    <tr>
+                        <td>Issue</td>
+                        <td>3</td>
+                    </tr>
+
+                    <tr>
+                        <td>Pages</td>
+                        <td>289–301</td>
+                    </tr>
+
+                    <tr>
+                        <td>DOI</td>
+                        <td>
+                            10.22059/IJAS.2022.349105.653909
+                        </td>
+                    </tr>
+
+                </table>
+
+
+                <div class="buttons">
+
+                    <a
+                        href="https://ijas.ut.ac.ir/article_94048.html"
+                        target="_blank"
+                        class="button button-primary">
+                        View Article
+                    </a>
+
+                    <a
+                        href="https://doi.org/10.22059/IJAS.2022.349105.653909"
+                        target="_blank"
+                        class="button">
+                        DOI
+                    </a>
+
+                    <a
+                        href="https://ijas.ut.ac.ir/article_94048_360ecac1a3177b8e64f0c5212bd40b4d.pdf"
+                        target="_blank"
+                        class="button">
+                        PDF
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- RESEARCH CONTRIBUTION -->
+
+            <section class="section">
+
+                <h2>Research Focus</h2>
+
+                <p class="abstract">
+
+                    This research focuses on the epidemiological and
+                    production-related consequences of FMD in Iranian dairy
+                    cattle, particularly the relationships between disease
+                    occurrence, parity, body condition, reproductive losses
+                    and culling.
+
+                    The findings can contribute to the development of
+                    management strategies aimed at controlling and preventing
+                    FMD and reducing associated production losses.
+
+                </p>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        © 2026 Mohsen Bijari · Academic Portfolio
+
+    </footer>
+
+</body>
+  </html>
