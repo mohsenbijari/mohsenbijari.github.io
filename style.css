@@ -1,0 +1,412 @@
+/* =========================================
+   MOHSEN BIJARI — ACADEMIC PORTFOLIO
+   Global Stylesheet
+========================================= */
+
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BASE
+========================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    color: #222;
+    background: #f7f7f5;
+}
+
+a {
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+nav {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    color: #777;
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+section {
+    padding: 80px 0;
+}
+
+.section-header {
+    margin-bottom: 45px;
+}
+
+.section-label {
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.section-header h2 {
+    font-size: 34px;
+    line-height: 1.25;
+    margin-bottom: 12px;
+}
+
+.section-header p {
+    color: #777;
+}
+
+
+/* =========================================
+   HEADINGS & TEXT
+========================================= */
+
+h1,
+h2,
+h3,
+h4 {
+    color: #222;
+}
+
+h1 {
+    line-height: 1.2;
+}
+
+h2 {
+    line-height: 1.3;
+}
+
+h3 {
+    line-height: 1.4;
+}
+
+p {
+    color: #444;
+}
+
+
+/* =========================================
+   CARDS
+========================================= */
+
+.research-grid,
+.publications-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.research-card,
+.publication-card {
+    background: #ffffff;
+    border: 1px solid #e2e2e2;
+    padding: 30px;
+}
+
+.research-card h3,
+.publication-card h3 {
+    margin-bottom: 15px;
+}
+
+.research-card p,
+.publication-card p {
+    color: #555;
+}
+
+
+/* =========================================
+   CARD LABELS
+========================================= */
+
+.research-number,
+.publication-year {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   LINKS
+========================================= */
+
+.research-link,
+.publication-link {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #222;
+}
+
+.research-link:hover,
+.publication-link:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    border: 1px solid #222;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: #222;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   TIMELINE
+========================================= */
+
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 0 0 45px 40px;
+    border-left: 1px solid #d8d8d8;
+}
+
+.timeline-item:last-child {
+    border-left: 1px solid transparent;
+    padding-bottom: 0;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 5px;
+    width: 9px;
+    height: 9px;
+    background: #222;
+    border-radius: 50%;
+}
+
+.timeline-year {
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+.timeline-title {
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.timeline-description {
+    color: #555;
+}
+
+
+/* =========================================
+   PROJECT / PUBLICATION DETAIL PAGES
+========================================= */
+
+.page-header {
+    padding: 70px 0 50px;
+    background: #ffffff;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.page-header .label {
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.page-header h1 {
+    font-size: 42px;
+    max-width: 850px;
+    margin-bottom: 18px;
+}
+
+.page-header .subtitle {
+    max-width: 800px;
+    color: #666;
+    font-size: 18px;
+}
+
+.detail-section {
+    padding: 55px 0;
+}
+
+.detail-section h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.detail-section p {
+    max-width: 850px;
+    margin-bottom: 16px;
+}
+
+
+/* =========================================
+   INFO GRID
+========================================= */
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.info-box {
+    background: #ffffff;
+    border: 1px solid #e2e2e2;
+    padding: 25px;
+}
+
+.info-title {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #777;
+    margin-bottom: 7px;
+}
+
+.info-value {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   LISTS
+========================================= */
+
+.detail-section ul {
+    max-width: 850px;
+    padding-left: 22px;
+}
+
+.detail-section li {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+
+/* =========================================
+   BACK LINK
+========================================= */
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    padding: 35px 0;
+    background: #ffffff;
+    border-top: 1px solid #e2e2e2;
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 850px) {
+
+    .research-grid,
+    .publications-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    section {
+        padding: 60px 0;
+    }
+
+    .research-grid,
+    .publications-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-header h2 {
+        font-size: 29px;
+    }
+
+    .page-header h1 {
+        font-size: 32px;
+    }
+
+    .timeline-item {
+        padding-left: 30px;
+    }
+
+  }
