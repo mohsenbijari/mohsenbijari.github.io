@@ -462,77 +462,227 @@
 
 
         /* =========================================
-           PUBLICATIONS
-        ========================================== */
+   PUBLICATIONS
+========================================== */
 
-        .publication {
-            padding: 30px;
+.publications-intro {
+    max-width: 780px;
+    color: var(--muted);
+    margin-bottom: 40px;
+}
 
-            background: white;
+.publication-card {
+    background: white;
 
-            border:
-                1px solid var(--border);
+    border: 1px solid var(--border);
 
-            border-left:
-                5px solid var(--navy);
+    border-radius: 10px;
 
-            border-radius: 7px;
+    padding: 35px;
 
-            margin-bottom: 20px;
-        }
+    margin-bottom: 28px;
 
-        .publication-year {
-            font-size: 12px;
-            font-weight: 700;
+    transition: 0.25s;
 
-            color: var(--blue);
+    overflow: hidden;
+}
 
-            margin-bottom: 8px;
-        }
+.publication-card:hover {
+    transform: translateY(-4px);
 
-        .publication h3 {
-            color: var(--navy);
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.07);
+}
 
-            font-size: 19px;
+.publication-top {
+    display: flex;
 
-            margin-bottom: 10px;
-        }
+    justify-content: space-between;
 
-        .publication-authors {
-            color: var(--muted);
+    align-items: center;
 
-            font-size: 14px;
+    gap: 20px;
 
-            margin-bottom: 15px;
-        }
+    margin-bottom: 15px;
+}
 
-        .publication-journal {
-            font-size: 14px;
+.publication-year {
+    display: inline-block;
 
-            color: var(--text);
+    font-size: 12px;
 
-            margin-bottom: 14px;
-        }
+    font-weight: 700;
 
-        .doi-button {
-            display: inline-block;
+    color: var(--blue);
 
-            padding: 8px 14px;
+    letter-spacing: 1px;
 
-            background: var(--light-blue);
+    text-transform: uppercase;
+}
 
-            color: var(--navy);
+.publication-type {
+    font-size: 11px;
 
-            border-radius: 5px;
+    font-weight: 700;
 
-            font-size: 13px;
+    color: var(--navy);
 
-            font-weight: 700;
-        }
+    background: var(--light-blue);
 
-        .doi-button:hover {
-            background: #dceaf2;
-        }
+    padding: 6px 10px;
+
+    border-radius: 4px;
+
+    white-space: nowrap;
+}
+
+.publication-card h3 {
+    color: var(--navy);
+
+    font-size: 22px;
+
+    line-height: 1.4;
+
+    margin-bottom: 12px;
+}
+
+.publication-authors {
+    color: var(--text);
+
+    font-size: 14px;
+
+    margin-bottom: 8px;
+}
+
+.publication-journal {
+    color: var(--muted);
+
+    font-size: 14px;
+
+    margin-bottom: 22px;
+}
+
+.publication-abstract {
+    color: var(--muted);
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    padding: 20px;
+
+    background: #f8fafb;
+
+    border-left:
+        3px solid var(--blue);
+
+    margin-bottom: 22px;
+}
+
+.publication-highlights {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 9px;
+
+    margin-bottom: 25px;
+}
+
+.publication-highlight {
+    background: var(--light-blue);
+
+    color: var(--navy);
+
+    padding: 7px 11px;
+
+    border-radius: 4px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+.publication-actions {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.publication-button {
+    display: inline-block;
+
+    padding: 9px 15px;
+
+    border-radius: 5px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    transition: 0.2s;
+}
+
+.publication-button-primary {
+    background: var(--navy);
+
+    color: white;
+}
+
+.publication-button-primary:hover {
+    background: var(--dark);
+}
+
+.publication-button-secondary {
+    background: var(--light-blue);
+
+    color: var(--navy);
+}
+
+.publication-button-secondary:hover {
+    background: #dceaf2;
+}
+
+.publication-doi {
+    margin-top: 18px;
+
+    color: #78909c;
+
+    font-size: 12px;
+}
+
+.publication-doi strong {
+    color: var(--text);
+}
+
+
+/* MOBILE PUBLICATIONS */
+
+@media (max-width: 600px) {
+
+    .publication-card {
+        padding: 24px;
+    }
+
+    .publication-top {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+    .publication-card h3 {
+        font-size: 19px;
+    }
+
+    .publication-abstract {
+        padding: 16px;
+    }
+
+}
 
 
         /* =========================================
@@ -1407,34 +1557,330 @@
 
                 A Study on some Factors Affecting the Incidence
                 of Foot and Mouth Disease and the Culling Associated
+<!-- =========================================
+     PUBLICATIONS
+========================================== -->
+
+<section id="publications">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-label">
+                Publications
+            </div>
+
+            <h2>
+                Selected Publications
+            </h2>
+
+            <p>
+                Peer-reviewed research focusing on animal health,
+                dairy cattle performance, reproduction and economic
+                consequences of livestock diseases.
+            </p>
+
+        </div>
+
+
+        <!-- =====================================
+             PUBLICATION 1
+        ====================================== -->
+
+        <article class="publication-card">
+
+
+            <div class="publication-top">
+
+                <div class="publication-year">
+                    2025
+                </div>
+
+                <div class="publication-type">
+                    Research Article
+                </div>
+
+            </div>
+
+
+            <h3>
+
+                Productivity, reproduction and economic losses due
+                to foot-and-mouth disease (FMD) in Iranian Holstein cows
+
+            </h3>
+
+
+            <p class="publication-authors">
+
+                <strong>Authors:</strong>
+
+                Mohsen Bijari,
+                Ali Sadeghi-Sefidmazgi,
+                Maryam Ansari-Lari,
+                Morteza Hosseini Ghaffari
+
+            </p>
+
+
+            <p class="publication-journal">
+
+                <strong>
+                    Preventive Veterinary Medicine
+                </strong>
+
+                · Volume 238 · 106471
+
+            </p>
+
+
+            <div class="publication-abstract">
+
+                <strong>Abstract</strong>
+
+                <br><br>
+
+                This retrospective study investigated the impact
+                of foot-and-mouth disease (FMD) on productive and
+                reproductive traits, economic losses and culling
+                trends in Holstein cows in Iran.
+
+                Data from nine industrial and semi-industrial
+                dairy herds were analyzed over a decade
+                (2009–2019), including 49,400 records from
+                20,330 cows.
+
+                A mixed linear model was used to evaluate the
+                effects of FMD on milk production, fat and
+                protein yields and reproductive traits, while
+                a simulated bioeconomic model was used to
+                estimate financial losses.
+
+            </div>
+
+
+            <div class="publication-highlights">
+
+                <span class="publication-highlight">
+                    49,400 Records
+                </span>
+
+                <span class="publication-highlight">
+                    20,330 Cows
+                </span>
+
+                <span class="publication-highlight">
+                    9 Dairy Herds
+                </span>
+
+                <span class="publication-highlight">
+                    Mixed Linear Model
+                </span>
+
+                <span class="publication-highlight">
+                    Bioeconomic Modelling
+                </span>
+
+                <span class="publication-highlight">
+                    Dairy Cattle
+                </span>
+
+            </div>
+
+
+            <div class="publication-actions">
+
+                <a
+                    href="https://doi.org/10.1016/j.prevetmed.2025.106471"
+                    target="_blank"
+                    class="publication-button publication-button-primary">
+
+                    View Article →
+
+                </a>
+
+
+                <a
+                    href="https://doi.org/10.1016/j.prevetmed.2025.106471"
+                    target="_blank"
+                    class="publication-button publication-button-secondary">
+
+                    DOI
+
+                </a>
+
+
+                <a
+                    href="https://pubmed.ncbi.nlm.nih.gov/39978113/"
+                    target="_blank"
+                    class="publication-button publication-button-secondary">
+
+                    PubMed
+
+                </a>
+
+            </div>
+
+
+            <div class="publication-doi">
+
+                <strong>DOI:</strong>
+
+                10.1016/j.prevetmed.2025.106471
+
+            </div>
+
+
+        </article>
+
+
+
+        <!-- =====================================
+             PUBLICATION 2
+        ====================================== -->
+
+        <article class="publication-card">
+
+
+            <div class="publication-top">
+
+                <div class="publication-year">
+                    2023
+                </div>
+
+                <div class="publication-type">
+                    Research Article
+                </div>
+
+            </div>
+
+
+            <h3>
+
+                A Study on some Factors Affecting the Incidence
+                of Foot and Mouth Disease and the Culling Associated
                 with in Iranian Dairy Cows
 
             </h3>
 
+
             <p class="publication-authors">
 
-                Bijari, M., & Sadeghi-Sefidmazgi, A.
+                <strong>Authors:</strong>
+
+                Mohsen Bijari
+                & Ali Sadeghi-Sefidmazgi
 
             </p>
+
 
             <p class="publication-journal">
 
-                <em>
-                    Iranian Journal of Animal Science, 54(3), 289–301.
-                </em>
+                <strong>
+                    Iranian Journal of Animal Science
+                </strong>
+
+                · 54(3) · 289–301
 
             </p>
 
-            <a
-                href="https://doi.org/10.22059/IJAS.2022.349105.653909"
-                target="_blank"
-                class="doi-button">
 
-                View DOI →
+            <div class="publication-abstract">
 
-            </a>
+                <strong>Abstract</strong>
 
-        </div>
+                <br><br>
+
+                This study investigated the incidence, culling,
+                abortion, stillbirth and weight loss associated
+                with foot-and-mouth disease outbreaks in
+                Iranian dairy cows and examined their interactions
+                across different parity groups.
+
+                The study used 49,400 records from 20,330 cows
+                collected between 2009 and 2019 from nine
+                industrial dairy farms.
+
+                Statistical analyses included the FREQ and
+                LOGISTIC procedures in SAS.
+
+            </div>
+
+
+            <div class="publication-highlights">
+
+                <span class="publication-highlight">
+                    49,400 Records
+                </span>
+
+                <span class="publication-highlight">
+                    20,330 Cows
+                </span>
+
+                <span class="publication-highlight">
+                    9 Dairy Farms
+                </span>
+
+                <span class="publication-highlight">
+                    FREQ Procedure
+                </span>
+
+                <span class="publication-highlight">
+                    LOGISTIC Procedure
+                </span>
+
+                <span class="publication-highlight">
+                    FMD Epidemiology
+                </span>
+
+            </div>
+
+
+            <div class="publication-actions">
+
+                <a
+                    href="https://doi.org/10.22059/IJAS.2022.349105.653909"
+                    target="_blank"
+                    class="publication-button publication-button-primary">
+
+                    View Article →
+
+                </a>
+
+
+                <a
+                    href="https://doi.org/10.22059/IJAS.2022.349105.653909"
+                    target="_blank"
+                    class="publication-button publication-button-secondary">
+
+                    DOI
+
+                </a>
+
+
+                <a
+                    href="https://ijas.ut.ac.ir/article_94048_360ecac1a3177b8e64f0c5212bd40b4d.pdf"
+                    target="_blank"
+                    class="publication-button publication-button-secondary">
+
+                    PDF
+
+                </a>
+
+            </div>
+
+
+            <div class="publication-doi">
+
+                <strong>DOI:</strong>
+
+                10.22059/IJAS.2022.349105.653909
+
+            </div>
+
+
+        </article>
 
     </div>
 
