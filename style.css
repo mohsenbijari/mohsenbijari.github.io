@@ -517,3 +517,80 @@ footer {
     }
 
 }
+
+
+/* Education */
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.education-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.education-period {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+.education-card h3 {
+    color: #172033;
+    font-size: 22px;
+    line-height: 1.4;
+    margin: 0 0 7px;
+}
+
+.education-card h4 {
+    color: #475569;
+    font-size: 16px;
+    margin: 0 0 3px;
+    font-weight: 600;
+}
+
+.education-location {
+    color: #64748b;
+    font-size: 14px;
+    margin: 0 0 22px;
+}
+
+.education-detail {
+    border-top: 1px solid #e2e8f0;
+    padding-top: 17px;
+    margin-top: 17px;
+}
+
+.education-detail strong {
+    color: #2563eb;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.education-detail p {
+    color: #475569;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0 0 10px;
+}
+
+.education-detail p:last-child {
+    margin-bottom: 0;
+}
+
+
+@media (max-width: 750px) {
+
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
