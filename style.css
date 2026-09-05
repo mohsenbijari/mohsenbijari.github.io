@@ -760,4 +760,45 @@ footer {
     margin-top: 22px;
 }
 
-‌
+‌/* Contact */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.contact-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.contact-card h3 {
+    color: #172033;
+    font-size: 18px;
+    margin: 0 0 8px;
+}
+
+.contact-card p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.contact-card a {
+    color: #2563eb;
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 750px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
