@@ -669,7 +669,55 @@ footer {
     line-height: 1.4;
     margin: 0 0 10px;
 }
+/* Professional Experience */
 
+.professional-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.professional-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 28px;
+}
+
+.professional-period {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.professional-card h3 {
+    color: #172033;
+    font-size: 21px;
+    line-height: 1.4;
+    margin: 0 0 6px;
+}
+
+.professional-card h4 {
+    color: #475569;
+    font-size: 15px;
+    margin: 0 0 15px;
+    font-weight: 600;
+}
+
+.professional-card p {
+    color: #475569;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+@media (max-width: 750px) {
+    .professional-grid {
+        grid-template-columns: 1fr;
+    }
+}
 .award-card p {
     color: #475569;
     font-size: 15px;
