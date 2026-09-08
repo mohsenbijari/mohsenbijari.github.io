@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FMD Economic Impact in Iranian Holstein Cows | Mohsen Bijari</title>
+
+    <meta name="description" content="Research publication by Mohsen Bijari on productivity, reproduction and economic losses due to foot-and-mouth disease in Iranian Holstein cows.">
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f7f9fc;
+            color: #263238;
+            line-height: 1.7;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: min(1000px, 92%);
+            margin: auto;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            background: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 18px 0;
+        }
+
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .back-link {
+            color: #2563eb;
+            font-weight: 600;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        /* HEADER */
+
+        .publication-header {
+            background: #ffffff;
+            padding: 70px 0 55px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .publication-year {
+            display: inline-block;
+            background: #e8f0fe;
+            color: #2563eb;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: clamp(30px, 5vw, 46px);
+            line-height: 1.2;
+            color: #172033;
+            max-width: 900px;
+            margin-bottom: 25px;
+        }
+
+        .authors {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .journal {
+            color: #64748b;
+            font-size: 16px;
+        }
+
+        /* CONTENT */
+
+        main {
+            padding: 50px 0 80px;
+        }
+
+        .section {
+            background: #ffffff;
+            padding: 35px;
+            margin-bottom: 25px;
+            border-radius: 14px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .section h2 {
+            color: #172033;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .abstract {
+            font-size: 17px;
+            color: #475569;
+        }
+
+        /* HIGHLIGHTS */
+
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .highlight {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .highlight strong {
+            display: block;
+            font-size: 23px;
+            color: #2563eb;
+            margin-bottom: 5px;
+        }
+
+        .highlight span {
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        /* FINDINGS */
+
+        .findings {
+            padding-left: 20px;
+        }
+
+        .findings li {
+            margin-bottom: 12px;
+        }
+
+        /* ARTICLE INFO */
+
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .info-table tr {
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .info-table td {
+            padding: 13px 5px;
+            vertical-align: top;
+        }
+
+        .info-table td:first-child {
+            width: 180px;
+            font-weight: 700;
+            color: #334155;
+        }
+
+        /* BUTTONS */
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 11px 18px;
+            border-radius: 8px;
+            font-weight: 600;
+            border: 1px solid #2563eb;
+            color: #2563eb;
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            background: #2563eb;
+            color: #ffffff;
+        }
+
+        .button-primary {
+            background: #2563eb;
+            color: #ffffff;
+        }
+
+        .button-primary:hover {
+            background: #1d4ed8;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #172033;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            .publication-header {
+                padding: 45px 0;
+            }
+
+            .section {
+                padding: 25px;
+            }
+
+            .highlights {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .info-table td:first-child {
+                width: 130px;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            .highlights {
+                grid-template-columns: 1fr;
+            }
+
+            .info-table,
+            .info-table tbody,
+            .info-table tr,
+            .info-table td {
+                display: block;
+                width: 100%;
+            }
+
+            .info-table td:first-child {
+                padding-bottom: 2px;
+            }
+
+            .info-table td:last-child {
+                padding-top: 2px;
+                padding-bottom: 15px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="container nav-inner">
+
+            <a href="../index.html" class="back-link">
+                ← Back to Academic Portfolio
+            </a>
+
+        </div>
+    </nav>
+
+
+    <header class="publication-header">
+
+        <div class="container">
+
+            <span class="publication-year">
+                2025 · Research Article
+            </span>
+
+            <h1>
+                Productivity, reproduction and economic losses due to
+                foot-and-mouth disease (FMD) in Iranian Holstein cows
+            </h1>
+
+            <p class="authors">
+                <strong>Mohsen Bijari</strong> · Ali Sadeghi-Sefidmazgi
+            </p>
+
+            <p class="journal">
+                Preventive Veterinary Medicine · Volume 238 · 106471 · 2025
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <div class="container">
+
+
+            <!-- ABSTRACT -->
+
+            <section class="section">
+
+                <h2>Abstract</h2>
+
+                <p class="abstract">
+
+                    Foot-and-mouth disease (FMD) is an important infectious
+                    disease that can substantially affect the productivity,
+                    reproduction and economic performance of dairy cattle.
+                    This retrospective study evaluated the effects of FMD on
+                    productive and reproductive traits, economic losses and
+                    culling trends in Iranian Holstein cows.
+
+                    Data from nine industrial and semi-industrial dairy herds
+                    collected between 2009 and 2019 were analysed, comprising
+                    49,400 records from 20,330 cows.
+
+                    Productive and reproductive traits were analysed using
+                    mixed linear models, while a simulated bioeconomic model
+                    was used to estimate the financial consequences of FMD.
+                </p>
+
+            </section>
+
+
+            <!-- HIGHLIGHTS -->
+
+            <section class="section">
+
+                <h2>Research at a Glance</h2>
+
+                <div class="highlights">
+
+                    <div class="highlight">
+                        <strong>49,400</strong>
+                        <span>Animal records</span>
+                    </div>
+
+                    <div class="highlight">
+                        <strong>20,330</strong>
+                        <span>Holstein cows</span>
+                    </div>
+
+                    <div class="highlight">
+                        <strong>9</strong>
+                        <span>Dairy herds</span>
+                    </div>
+
+                    <div class="highlight">
+                        <strong>845.9 kg</strong>
+                        <span>Reduction in FCM per case</span>
+                    </div>
+
+                    <div class="highlight">
+                        <strong>$1,082.3</strong>
+                        <span>Average economic loss per case</span>
+                    </div>
+
+                    <div class="highlight">
+                        <strong>2009–2019</strong>
+                        <span>Study period</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- KEY FINDINGS -->
+
+            <section class="section">
+
+                <h2>Key Findings</h2>
+
+                <ul class="findings">
+
+                    <li>
+                        FMD was associated with an estimated reduction of
+                        <strong>845.9 kg</strong> in fat-corrected milk (FCM)
+                        per affected cow.
+                    </li>
+
+                    <li>
+                        Fat yield decreased by approximately
+                        <strong>44.1 kg</strong>.
+                    </li>
+
+                    <li>
+                        Protein yield was reduced by approximately
+                        <strong>2.3 kg</strong>.
+                    </li>
+
+                    <li>
+                        Calving interval increased by approximately
+                        <strong>30.9 days</strong>.
+                    </li>
+
+                    <li>
+                        Days open increased by approximately
+                        <strong>13.7 days</strong>.
+                    </li>
+
+                    <li>
+                        The average estimated economic loss was approximately
+                        <strong>$1,082.3 per FMD case</strong>.
+                    </li>
+
+                    <li>
+                        Culling and replacement accounted for approximately
+                        <strong>27%</strong> of the estimated economic loss.
+                    </li>
+
+                    <li>
+                        Reproductive inefficiency accounted for approximately
+                        <strong>22%</strong> of the estimated loss.
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+            <!-- METHODOLOGY -->
+
+            <section class="section">
+
+                <h2>Methodology</h2>
+
+                <p class="abstract">
+
+                    The study used retrospective data collected from nine
+                    industrial and semi-industrial dairy farms in Iran.
+                    Productive and reproductive traits were evaluated using
+                    mixed linear modelling.
+
+                    Economic consequences were subsequently estimated using
+                    a simulated bioeconomic model incorporating production,
+                    reproduction, culling and replacement losses.
+
+                </p>
+
+            </section>
+
+
+            <!-- ARTICLE INFORMATION -->
+
+            <section class="section">
+
+                <h2>Article Information</h2>
+
+                <table class="info-table">
+
+                    <tr>
+                        <td>Authors</td>
+                        <td>
+                            Mohsen Bijari; Ali Sadeghi-Sefidmazgi
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Journal</td>
+                        <td>
+                            Preventive Veterinary Medicine
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Year</td>
+                        <td>2025</td>
+                    </tr>
+
+                    <tr>
+                        <td>Volume</td>
+                        <td>238</td>
+                    </tr>
+
+                    <tr>
+                        <td>Article</td>
+                        <td>106471</td>
+                    </tr>
+
+                    <tr>
+                        <td>DOI</td>
+                        <td>
+                            10.1016/j.prevetmed.2025.106471
+                        </td>
+                    </tr>
+
+                </table>
+
+
+                <div class="buttons">
+
+                    <a
+                        href="https://www.sciencedirect.com/science/article/pii/S016758772500056X"
+                        target="_blank"
+                        class="button button-primary">
+                        View Article
+                    </a>
+
+                    <a
+                        href="https://doi.org/10.1016/j.prevetmed.2025.106471"
+                        target="_blank"
+                        class="button">
+                        DOI
+                    </a>
+
+                    <a
+                        href="https://pubmed.ncbi.nlm.nih.gov/39978113/"
+                        target="_blank"
+                        class="button">
+                        PubMed
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- RESEARCH CONTRIBUTION -->
+
+            <section class="section">
+
+                <h2>Research Focus</h2>
+
+                <p class="abstract">
+
+                    This research integrates animal health, quantitative
+                    analysis, dairy cattle production and economic modelling
+                    to quantify the consequences of FMD at the individual-cow
+                    and farm-production level.
+
+                    The study provides an applied framework for evaluating
+                    disease-associated production, reproductive and economic
+                    losses in dairy cattle systems.
+
+                </p>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        © 2026 Mohsen Bijari · Academic Portfolio
+
+    </footer>
+
+</body>
+</html>
