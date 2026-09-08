@@ -818,3 +818,40 @@ footer {
         text-align: center;
     }
    }
+/* =========================================
+   BREADCRUMB
+========================================= */
+
+.breadcrumb {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 18px 24px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 13px;
+    color: #78909c;
+}
+
+.breadcrumb a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    color: #90a4ae;
+}
+
+@media (max-width: 600px) {
+    .breadcrumb {
+        padding: 14px 18px 0;
+        font-size: 12px;
+        gap: 6px;
+    }
+}
