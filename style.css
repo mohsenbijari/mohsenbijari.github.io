@@ -855,3 +855,34 @@ footer {
         gap: 6px;
     }
 }
+.related-content {
+    margin-top: 42px;
+    padding-top: 28px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.related-content h2 {
+    margin-bottom: 18px;
+}
+
+.related-links {
+    display: grid;
+    gap: 12px;
+}
+
+.related-links a {
+    display: block;
+    padding: 16px 18px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.related-links a:hover {
+    border-color: #2563eb;
+    transform: translateY(-2px);
+}
